@@ -15,7 +15,7 @@ namespace Test
             //BigIntFactorizationTest();
             string N;
             string D;
-            (N,D) = Numbers.Task(12, 30, 4);
+            (N,D) = Numbers.Task(2, 100, 1);
             Console.Write(N);
             Console.WriteLine(D);
         }

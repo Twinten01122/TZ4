@@ -110,8 +110,7 @@ namespace TZ4
         //Внутренняя функция
         private static int[] FacInside(int n)
         {
-            List<int> final = new List<int>();
-            string s = "";
+            List<int> final = new List<int>();            
             int[] prn = PrimeNum(n);
             while (n != 1)
                 foreach (int i in prn)
