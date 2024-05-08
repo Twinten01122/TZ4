@@ -9,11 +9,6 @@ namespace TZ4
 {
     public class Numbers
     {
-        //public int[] DivOfNUm()
-        //{
-        //    int[] final;
-        //    return final;
-        //}
         public static string DivOfNUm(int n)
         {         
             string finalStr = "";
