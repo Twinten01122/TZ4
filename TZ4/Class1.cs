@@ -6,10 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
+using System.Runtime.InteropServices;
 namespace TZ4
 {
     public class Numbers
     {
+        /// <summary>
+        /// Функция находит все делители числа n
+        /// </summary>
+        /// <param name="n">Число, делители которого нужно найти</param>
+        /// <returns>Возвращает строку со всеми делителями числа n</returns>
         public static string DivOfNUm(int n)
         {         
             string finalStr = "";
@@ -42,6 +48,11 @@ namespace TZ4
             }
             return finalStr;
         }
+        /// <summary>
+        /// Функция производит факторизацию числа 
+        /// </summary>
+        /// <param name="n">Число, которое нужно разложить на простые делители</param>
+        /// <returns>Возвращает строку, которая является простыми делителями числа n</returns>
         public static string Factorization(int n)
         {
             List<int> final = new List<int>();
@@ -70,6 +81,11 @@ namespace TZ4
             s = s + final[j - 1].ToString() + "^" + c;            
             return s;
         }
+        /// <summary>
+        /// Нахождение всех простых чисел в диапазоне [1,n]
+        /// </summary>
+        /// <param name="n">Число, </param>
+        /// <returns>Возвращает массив, который содержыт все простые числа в диапазоне [1,n]</returns>
         public static int[] PrimeNum(int n)
         {
             int i = 0;
@@ -88,7 +104,11 @@ namespace TZ4
                     list.Add(i);            
             return list.ToArray();            
         }
-        public static int[] FacInside(int n)
+
+
+
+        //Внутренняя функция
+        private static int[] FacInside(int n)
         {
             List<int> final = new List<int>();
             string s = "";
@@ -117,30 +137,30 @@ namespace TZ4
         {
             return n * m / FindNOD(n, m);
         }
-
+        /// <summary>
+        /// Функция для нахождения всех протых делителей для типа BigInteger (Сложность O(L(n)^(3*sqrt(2))))
+        /// </summary>
+        /// <param name="n">Число</param>
+        /// <returns>Возвращает строкуБ содержащую все простые делители числа</returns>
         static public string BigFactorization(BigInteger n)
         {
             string s = "";
-            List <BigInteger> final = new List<BigInteger>();
-            BigInteger x = 2;
-            BigInteger y = 2;
-            BigInteger c = 1;
+            List<BigInteger> final = new List<BigInteger>();
 
-            while (final.Count == 0)
+            for (BigInteger i = 2; i * i <= n; i++)
             {
-                x = (x * x + c) % n;
-                y = (y * y + c) % n;
-                y = (y * y + c) % n;
-
-                BigInteger gcd = BigInteger.GreatestCommonDivisor(BigInteger.Abs(x-y), n);
-                if (gcd != 1 && gcd != n)
+                while (n % i == 0)
                 {
-                    final.Add(gcd);
-                    final.Add(n / gcd);
+                    final.Add(i);
+                    n /= i;
                 }
-            } 
-            
-            int l= 1;
+            }
+
+            if (n > 1)
+            {
+                final.Add(n);
+            }
+            int l = 1;
             int j = 1;
             for (; j < final.Count; j++)
             {
@@ -148,12 +168,40 @@ namespace TZ4
                     l++;
                 else
                 {
-                    s = s + final[j - 1].ToString() + "^" + c + "*";
+                    s = s + final[j - 1].ToString() + "^" + l + "*";
                     l = 1;
                 }
             }
-            s = s + final[j - 1].ToString() + "^" + c;
+            s = s + final[j - 1].ToString() + "^" + l;
             return s;
+        }
+        /// <summary>
+        /// Функция для поиска всех чисел в указанном диапазоне с заданным количеством делителей
+        /// </summary>
+        /// <param name="start">Стартовое число диапазона</param>
+        /// <param name="end">Конечное число диапазона</param>
+        /// <param name="count">Количество делителей числа</param>
+        /// <returns>Возвращает кортеж из строкБ первая строка - все числа в указанном диапазоне, вторая - их делители соответственно</returns>
+        static public (string, string) Task(int start, int end, int count)            
+        {            
+            string[] b;
+            string FinalNum = "";
+            string FinalDiv = "";
+
+            Dictionary <int, string> dic = new Dictionary<int, string>();
+            for (int i = start; i <= end; i++)
+            {
+                string s = DivOfNUm(i);
+                b = s.TrimEnd().Split(' ');               
+                if (b.Length == count)
+                    dic[i] = s;
+            }
+            foreach (System.Collections.Generic.KeyValuePair<int, string> keyValuePair in dic)
+            {
+                FinalNum = FinalNum + keyValuePair.Key + "\n";
+                FinalDiv = FinalDiv + keyValuePair.Value + "\n";
+            }      
+            return (FinalNum,FinalDiv);
         }
     }
 }
