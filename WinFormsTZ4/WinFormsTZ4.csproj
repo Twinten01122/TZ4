@@ -46,14 +46,80 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="bigIntFactorization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="bigIntFactorization.Designer.cs">
+      <DependentUpon>bigIntFactorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dividers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dividers.Designer.cs">
+      <DependentUpon>dividers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dividersProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dividersProblem.Designer.cs">
+      <DependentUpon>dividersProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="factorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="factorization.Designer.cs">
+      <DependentUpon>factorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gcd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gcd.Designer.cs">
+      <DependentUpon>gcd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lcm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lcm.Designer.cs">
+      <DependentUpon>lcm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="primes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="primes.Designer.cs">
+      <DependentUpon>primes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="bigIntFactorization.resx">
+      <DependentUpon>bigIntFactorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dividers.resx">
+      <DependentUpon>dividers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dividersProblem.resx">
+      <DependentUpon>dividersProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factorization.resx">
+      <DependentUpon>factorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gcd.resx">
+      <DependentUpon>gcd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lcm.resx">
+      <DependentUpon>lcm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="primes.resx">
+      <DependentUpon>primes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
