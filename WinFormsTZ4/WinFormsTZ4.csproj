@@ -76,6 +76,12 @@
     <Compile Include="gcd.Designer.cs">
       <DependentUpon>gcd.cs</DependentUpon>
     </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
     <Compile Include="lcm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="gcd.resx">
       <DependentUpon>gcd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="lcm.resx">
       <DependentUpon>lcm.cs</DependentUpon>

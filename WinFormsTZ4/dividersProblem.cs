@@ -16,6 +16,5 @@ namespace WinFormsTZ4
         {
             InitializeComponent();
         }
-
     }
 }
