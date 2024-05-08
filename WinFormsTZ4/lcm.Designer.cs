@@ -33,10 +33,11 @@
             this.help = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lcdResult = new System.Windows.Forms.TextBox();
+            this.lcmResult = new System.Windows.Forms.TextBox();
             this.initialNumber1 = new System.Windows.Forms.TextBox();
             this.findLCM = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -92,14 +93,14 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "Введите первое число";
             // 
-            // lcdResult
+            // lcmResult
             // 
-            this.lcdResult.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.lcdResult.Location = new System.Drawing.Point(278, 575);
-            this.lcdResult.Margin = new System.Windows.Forms.Padding(2);
-            this.lcdResult.Name = "lcdResult";
-            this.lcdResult.Size = new System.Drawing.Size(467, 53);
-            this.lcdResult.TabIndex = 33;
+            this.lcmResult.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
+            this.lcmResult.Location = new System.Drawing.Point(278, 575);
+            this.lcmResult.Margin = new System.Windows.Forms.Padding(2);
+            this.lcmResult.Name = "lcmResult";
+            this.lcmResult.Size = new System.Drawing.Size(467, 53);
+            this.lcmResult.TabIndex = 33;
             // 
             // initialNumber1
             // 
@@ -120,6 +121,7 @@
             this.findLCM.TabIndex = 31;
             this.findLCM.Text = "Найти НОK";
             this.findLCM.UseVisualStyleBackColor = true;
+            this.findLCM.Click += new System.EventHandler(this.findLCM_Click);
             // 
             // label1
             // 
@@ -131,17 +133,28 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Нахождение наименьшего общего кратного";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
+            this.button1.Location = new System.Drawing.Point(399, 655);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(224, 67);
+            this.button1.TabIndex = 47;
+            this.button1.Text = "Закрыть";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // lcm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 733);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.initialNumber2);
             this.Controls.Add(this.help);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lcdResult);
+            this.Controls.Add(this.lcmResult);
             this.Controls.Add(this.initialNumber1);
             this.Controls.Add(this.findLCM);
             this.Controls.Add(this.label1);
@@ -160,9 +173,10 @@
         private System.Windows.Forms.Button help;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox lcdResult;
+        private System.Windows.Forms.TextBox lcmResult;
         private System.Windows.Forms.TextBox initialNumber1;
         private System.Windows.Forms.Button findLCM;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

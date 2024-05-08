@@ -37,15 +37,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.initialNumber2 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // help
             // 
             this.help.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.help.Location = new System.Drawing.Point(799, 638);
+            this.help.Location = new System.Drawing.Point(799, 655);
             this.help.Margin = new System.Windows.Forms.Padding(2);
             this.help.Name = "help";
-            this.help.Size = new System.Drawing.Size(212, 84);
+            this.help.Size = new System.Drawing.Size(212, 67);
             this.help.TabIndex = 27;
             this.help.Text = "Справка";
             this.help.UseVisualStyleBackColor = true;
@@ -100,6 +101,7 @@
             this.findGCD.TabIndex = 22;
             this.findGCD.Text = "Найти НОД";
             this.findGCD.UseVisualStyleBackColor = true;
+            this.findGCD.Click += new System.EventHandler(this.findGCD_Click);
             // 
             // label1
             // 
@@ -131,11 +133,22 @@
             this.initialNumber2.Size = new System.Drawing.Size(354, 53);
             this.initialNumber2.TabIndex = 28;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
+            this.button1.Location = new System.Drawing.Point(399, 654);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(224, 67);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Закрыть";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // gcd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 733);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.initialNumber2);
             this.Controls.Add(this.help);
@@ -164,5 +177,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox initialNumber2;
+        private System.Windows.Forms.Button button1;
     }
 }

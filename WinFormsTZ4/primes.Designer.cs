@@ -32,18 +32,17 @@
             this.initialNumber2 = new System.Windows.Forms.TextBox();
             this.help = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.primesResult = new System.Windows.Forms.TextBox();
-            this.initialNumber1 = new System.Windows.Forms.TextBox();
             this.findPrimes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.label4.Location = new System.Drawing.Point(9, 286);
+            this.label4.Location = new System.Drawing.Point(9, 224);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(768, 46);
@@ -53,7 +52,7 @@
             // initialNumber2
             // 
             this.initialNumber2.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.initialNumber2.Location = new System.Drawing.Point(780, 284);
+            this.initialNumber2.Location = new System.Drawing.Point(780, 222);
             this.initialNumber2.Margin = new System.Windows.Forms.Padding(2);
             this.initialNumber2.Name = "initialNumber2";
             this.initialNumber2.Size = new System.Drawing.Size(210, 53);
@@ -69,6 +68,7 @@
             this.help.TabIndex = 36;
             this.help.Text = "Справка";
             this.help.UseVisualStyleBackColor = true;
+            this.help.Click += new System.EventHandler(this.help_Click);
             // 
             // label3
             // 
@@ -81,17 +81,6 @@
             this.label3.TabIndex = 35;
             this.label3.Text = "Простые числа в заданном интервале:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(9, 205);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(754, 46);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Введите нижнюю границу интервала";
-            // 
             // primesResult
             // 
             this.primesResult.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
@@ -101,25 +90,17 @@
             this.primesResult.Size = new System.Drawing.Size(467, 53);
             this.primesResult.TabIndex = 33;
             // 
-            // initialNumber1
-            // 
-            this.initialNumber1.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.initialNumber1.Location = new System.Drawing.Point(780, 202);
-            this.initialNumber1.Margin = new System.Windows.Forms.Padding(2);
-            this.initialNumber1.Name = "initialNumber1";
-            this.initialNumber1.Size = new System.Drawing.Size(210, 53);
-            this.initialNumber1.TabIndex = 32;
-            // 
             // findPrimes
             // 
             this.findPrimes.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.findPrimes.Location = new System.Drawing.Point(245, 368);
+            this.findPrimes.Location = new System.Drawing.Point(245, 347);
             this.findPrimes.Margin = new System.Windows.Forms.Padding(2);
             this.findPrimes.Name = "findPrimes";
             this.findPrimes.Size = new System.Drawing.Size(532, 68);
             this.findPrimes.TabIndex = 31;
             this.findPrimes.Text = "Найти простые числа";
             this.findPrimes.UseVisualStyleBackColor = true;
+            this.findPrimes.Click += new System.EventHandler(this.findPrimes_Click);
             // 
             // label1
             // 
@@ -131,18 +112,27 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Нахождение простых чисел в интервале";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
+            this.button1.Location = new System.Drawing.Point(399, 655);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(224, 66);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Закрыть";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // primes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 733);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.initialNumber2);
             this.Controls.Add(this.help);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.primesResult);
-            this.Controls.Add(this.initialNumber1);
             this.Controls.Add(this.findPrimes);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -159,10 +149,9 @@
         private System.Windows.Forms.TextBox initialNumber2;
         private System.Windows.Forms.Button help;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox primesResult;
-        private System.Windows.Forms.TextBox initialNumber1;
         private System.Windows.Forms.Button findPrimes;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

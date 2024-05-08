@@ -10,16 +10,14 @@ using System.Windows.Forms;
 
 namespace WinFormsTZ4
 {
-    public partial class dividersProblem : Form
+    public partial class error : Form
     {
-        public dividersProblem()
+        string msg;
+        public error(string msg)
         {
             InitializeComponent();
-        }
-
-        private void findGCD_Click(object sender, EventArgs e)
-        {
-
+            this.msg = msg;
+            message.Text = msg;
         }
     }
 }
