@@ -28,15 +28,13 @@ namespace WinFormsTZ4
             try
             {
                 if (!int.TryParse(initialNumber1.Text, out int n)|| !int.TryParse(initialNumber2.Text, out int m))
-                {
                     throw new Exception("Вы ввели не число или не целое число.");
-                }
-                if (n <= 0 || m <= 0)
-                {
-                    throw new Exception("Вы ввели неположительное число.");
-                }
 
-                gcdResult.Text = Convert.ToString(Numbers.FindNOD(n,m));
+                if (n <= 0 || m <= 0)
+                    throw new Exception("Вы ввели неположительное число.");
+
+
+                gcdResult.Text = Convert.ToString(Numbers.FindNOD(n, m));
             }
             catch (Exception ex)
             {

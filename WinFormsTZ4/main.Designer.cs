@@ -54,84 +54,91 @@
             this.bigIntFactorizationButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bigIntFactorizationButton.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bigIntFactorizationButton.Location = new System.Drawing.Point(580, 335);
-            this.bigIntFactorizationButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bigIntFactorizationButton.Margin = new System.Windows.Forms.Padding(2);
             this.bigIntFactorizationButton.Name = "bigIntFactorizationButton";
             this.bigIntFactorizationButton.Size = new System.Drawing.Size(472, 111);
             this.bigIntFactorizationButton.TabIndex = 1;
             this.bigIntFactorizationButton.Text = "Факторизация большого числа";
             this.bigIntFactorizationButton.UseVisualStyleBackColor = true;
+            this.bigIntFactorizationButton.Click += new System.EventHandler(this.bigIntFactorizationButton_Click);
             // 
             // lcmButton
             // 
             this.lcmButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lcmButton.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lcmButton.Location = new System.Drawing.Point(67, 335);
-            this.lcmButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lcmButton.Margin = new System.Windows.Forms.Padding(2);
             this.lcmButton.Name = "lcmButton";
             this.lcmButton.Size = new System.Drawing.Size(472, 111);
             this.lcmButton.TabIndex = 2;
             this.lcmButton.Text = "Нахождение наименьшего общего кратного";
             this.lcmButton.UseVisualStyleBackColor = true;
+            this.lcmButton.Click += new System.EventHandler(this.lcmButton_Click);
             // 
             // gcdButton
             // 
             this.gcdButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gcdButton.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gcdButton.Location = new System.Drawing.Point(67, 462);
-            this.gcdButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gcdButton.Margin = new System.Windows.Forms.Padding(2);
             this.gcdButton.Name = "gcdButton";
             this.gcdButton.Size = new System.Drawing.Size(472, 111);
             this.gcdButton.TabIndex = 3;
             this.gcdButton.Text = "Нахождение наибольшего общего делителя";
             this.gcdButton.UseVisualStyleBackColor = true;
+            this.gcdButton.Click += new System.EventHandler(this.gcdButton_Click);
             // 
             // dividersButton
             // 
             this.dividersButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dividersButton.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dividersButton.Location = new System.Drawing.Point(67, 206);
-            this.dividersButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dividersButton.Margin = new System.Windows.Forms.Padding(2);
             this.dividersButton.Name = "dividersButton";
             this.dividersButton.Size = new System.Drawing.Size(472, 111);
             this.dividersButton.TabIndex = 4;
             this.dividersButton.Text = "Нахождение всех делителей числа";
             this.dividersButton.UseVisualStyleBackColor = true;
+            this.dividersButton.Click += new System.EventHandler(this.dividersButton_Click);
             // 
             // factorizationButton
             // 
             this.factorizationButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.factorizationButton.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.factorizationButton.Location = new System.Drawing.Point(580, 206);
-            this.factorizationButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.factorizationButton.Margin = new System.Windows.Forms.Padding(2);
             this.factorizationButton.Name = "factorizationButton";
             this.factorizationButton.Size = new System.Drawing.Size(472, 111);
             this.factorizationButton.TabIndex = 5;
             this.factorizationButton.Text = "Факторизация числа";
             this.factorizationButton.UseVisualStyleBackColor = true;
+            this.factorizationButton.Click += new System.EventHandler(this.factorizationButton_Click);
             // 
             // primesButton
             // 
             this.primesButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.primesButton.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.primesButton.Location = new System.Drawing.Point(580, 462);
-            this.primesButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.primesButton.Margin = new System.Windows.Forms.Padding(2);
             this.primesButton.Name = "primesButton";
             this.primesButton.Size = new System.Drawing.Size(472, 111);
             this.primesButton.TabIndex = 6;
             this.primesButton.Text = "Нахождение простых чисел в интервале";
             this.primesButton.UseVisualStyleBackColor = true;
+            this.primesButton.Click += new System.EventHandler(this.primesButton_Click);
             // 
             // dividersProblemButton
             // 
             this.dividersProblemButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dividersProblemButton.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dividersProblemButton.Location = new System.Drawing.Point(297, 609);
-            this.dividersProblemButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dividersProblemButton.Margin = new System.Windows.Forms.Padding(2);
             this.dividersProblemButton.Name = "dividersProblemButton";
             this.dividersProblemButton.Size = new System.Drawing.Size(526, 111);
             this.dividersProblemButton.TabIndex = 7;
             this.dividersProblemButton.Text = "Задача на нахождение делителей";
             this.dividersProblemButton.UseVisualStyleBackColor = true;
+            this.dividersProblemButton.Click += new System.EventHandler(this.dividersProblemButton_Click);
             // 
             // main
             // 
@@ -147,7 +154,7 @@
             this.Controls.Add(this.bigIntFactorizationButton);
             this.Controls.Add(this.label1);
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "main";
             this.Text = "Операции с числами";
             this.ResumeLayout(false);

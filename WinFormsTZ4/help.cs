@@ -17,7 +17,7 @@ namespace WinFormsTZ4
         {
             InitializeComponent();
             this.task = task;
-            string enterTheNumber = "Введите число в поле рядом с надписью \"Введите число\"."
+            string enterTheNumber = "Введите число в поле рядом с надписью \"Введите число\".";
             switch (task)
             {
                 case "dividers":

@@ -23,16 +23,13 @@ namespace WinFormsTZ4
             try
             {
                 if (!int.TryParse(initialNumber.Text, out int n))
-                {
                     throw new Exception("Вы ввели не число или не целое число.");
-                }
+
                 if (n <= 0)
-                {
                     throw new Exception("Вы ввели неположительное число.");
-                }
+
 
                 factorizationResult.Text = Numbers.Factorization(n);
-
             }
             catch (Exception ex)
             {

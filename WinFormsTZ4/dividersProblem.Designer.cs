@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.initialNumber2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.initialNumber3 = new System.Windows.Forms.TextBox();
             this.numbersResult = new System.Windows.Forms.RichTextBox();
             this.dividersResult = new System.Windows.Forms.RichTextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,9 +73,9 @@
             this.label2.Location = new System.Drawing.Point(17, 161);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(309, 46);
+            this.label2.Size = new System.Drawing.Size(640, 46);
             this.label2.TabIndex = 34;
-            this.label2.Text = "Введите число";
+            this.label2.Text = "Введите количество делителей";
             // 
             // initialNumber1
             // 
@@ -124,7 +124,7 @@
             // 
             this.initialNumber2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.initialNumber2.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.initialNumber2.Location = new System.Drawing.Point(788, 299);
+            this.initialNumber2.Location = new System.Drawing.Point(788, 229);
             this.initialNumber2.Margin = new System.Windows.Forms.Padding(2);
             this.initialNumber2.Name = "initialNumber2";
             this.initialNumber2.Size = new System.Drawing.Size(210, 53);
@@ -141,14 +141,14 @@
             this.label5.TabIndex = 40;
             this.label5.Text = "Введите нижнюю границу интервала";
             // 
-            // textBox1
+            // initialNumber3
             // 
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
-            this.textBox1.Location = new System.Drawing.Point(788, 229);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 53);
-            this.textBox1.TabIndex = 39;
+            this.initialNumber3.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
+            this.initialNumber3.Location = new System.Drawing.Point(788, 296);
+            this.initialNumber3.Margin = new System.Windows.Forms.Padding(2);
+            this.initialNumber3.Name = "initialNumber3";
+            this.initialNumber3.Size = new System.Drawing.Size(210, 53);
+            this.initialNumber3.TabIndex = 39;
             // 
             // numbersResult
             // 
@@ -201,7 +201,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.initialNumber2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.initialNumber3);
             this.Controls.Add(this.help);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -226,7 +226,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox initialNumber2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox initialNumber3;
         private System.Windows.Forms.RichTextBox numbersResult;
         private System.Windows.Forms.RichTextBox dividersResult;
         private System.Windows.Forms.Label label6;
