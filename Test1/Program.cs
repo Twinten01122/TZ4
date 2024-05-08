@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TZ4;
+using System.Numerics;
 
 namespace Test
 {
@@ -17,12 +18,13 @@ namespace Test
 
 
             int[] f = { 8, 12, 14, 15, 120, 225, 487, 522 };
-
+            string s = Numbers.BigFactorization();
+            
             for (i = 0; i < f.Length; i++)
             {
 
                 string s = Numbers.Factorization(f[i]);
-                Console.WriteLine(s);
+                //Console.WriteLine(s);
             }
         }
 
