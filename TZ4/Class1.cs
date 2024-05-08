@@ -8,6 +8,10 @@ namespace TZ4
 {
     public class Numbers
     {
-        public int[] DivOfNUm
+        public int[] DivOfNUm()
+        {
+            int[] final;
+            return final;
+        }
     }
 }
