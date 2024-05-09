@@ -35,12 +35,17 @@ namespace WinFormsTZ4
                 Form form = new error(ex.Message);
                 form.ShowDialog();
             }
-
         }
-        private void help_Click(object sender, EventArgs e)
+
+        private void help_Click_1(object sender, EventArgs e)
         {
-            Form form = new help("dividers");
+            help form = new help("dividers");
             form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

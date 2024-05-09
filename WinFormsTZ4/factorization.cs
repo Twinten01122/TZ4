@@ -37,10 +37,16 @@ namespace WinFormsTZ4
                 form.ShowDialog();
             }
         }
-        private void help_Click(object sender, EventArgs e)
+        
+        private void help_Click_1(object sender, EventArgs e)
         {
-            Form form = new help("factorization");
+            help form = new help("factorization");
             form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

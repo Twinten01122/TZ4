@@ -40,9 +40,8 @@ namespace WinFormsTZ4
 
         private void help_Click(object sender, EventArgs e)
         {
-            Form form = new help("dividersProblem");
+            help form = new help("dividersProblem");
             form.ShowDialog();
         }
-
     }
 }

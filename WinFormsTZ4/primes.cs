@@ -45,8 +45,13 @@ namespace WinFormsTZ4
 
         private void help_Click(object sender, EventArgs e)
         {
-            Form form = new help("primes");
+            help form = new help("primes");
             form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

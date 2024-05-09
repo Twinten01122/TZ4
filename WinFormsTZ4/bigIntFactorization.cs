@@ -39,9 +39,15 @@ namespace WinFormsTZ4
                 form.ShowDialog();
             }
         }
-        private void help_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            Form form = new help("bigIntFactorization");
+            this.Close();
+        }
+
+        private void help_Click_1(object sender, EventArgs e)
+        {
+            help form = new help("bigIntFactorization");
             form.ShowDialog();
         }
     }

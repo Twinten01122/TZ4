@@ -17,12 +17,6 @@ namespace WinFormsTZ4
         {
             InitializeComponent();
         }
-        private void help_Click(object sender, EventArgs e)
-        {
-            Form form = new help("gcd");
-            form.ShowDialog();
-        }
-
         private void findGCD_Click(object sender, EventArgs e)
         {
             try
@@ -38,9 +32,20 @@ namespace WinFormsTZ4
             }
             catch (Exception ex)
             {
-                Form form = new error(ex.Message);
+                error form = new error(ex.Message);
                 form.ShowDialog();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void help_Click_1(object sender, EventArgs e)
+        {
+            help form = new help("gcd");
+            form.ShowDialog();
         }
     }
 }

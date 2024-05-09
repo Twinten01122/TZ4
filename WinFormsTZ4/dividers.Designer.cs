@@ -42,12 +42,13 @@
             // 
             this.help.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
             this.help.Location = new System.Drawing.Point(799, 655);
-            this.help.Margin = new System.Windows.Forms.Padding(2);
+            this.help.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.help.Name = "help";
             this.help.Size = new System.Drawing.Size(212, 67);
             this.help.TabIndex = 34;
             this.help.Text = "Справка";
             this.help.UseVisualStyleBackColor = true;
+            this.help.Click += new System.EventHandler(this.help_Click_1);
             // 
             // label3
             // 
@@ -75,9 +76,8 @@
             // 
             this.dividersResult.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
             this.dividersResult.Location = new System.Drawing.Point(278, 575);
-            this.dividersResult.Margin = new System.Windows.Forms.Padding(2);
+            this.dividersResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dividersResult.Name = "dividersResult";
-            this.dividersResult.ReadOnly = true;
             this.dividersResult.Size = new System.Drawing.Size(467, 53);
             this.dividersResult.TabIndex = 31;
             // 
@@ -85,7 +85,7 @@
             // 
             this.initialNumber.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
             this.initialNumber.Location = new System.Drawing.Point(533, 202);
-            this.initialNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.initialNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.initialNumber.Name = "initialNumber";
             this.initialNumber.Size = new System.Drawing.Size(354, 53);
             this.initialNumber.TabIndex = 30;
@@ -94,7 +94,7 @@
             // 
             this.findDividers.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
             this.findDividers.Location = new System.Drawing.Point(245, 368);
-            this.findDividers.Margin = new System.Windows.Forms.Padding(2);
+            this.findDividers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.findDividers.Name = "findDividers";
             this.findDividers.Size = new System.Drawing.Size(532, 68);
             this.findDividers.TabIndex = 29;
@@ -122,6 +122,7 @@
             this.button1.TabIndex = 48;
             this.button1.Text = "Закрыть";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dividers
             // 
@@ -136,7 +137,7 @@
             this.Controls.Add(this.initialNumber);
             this.Controls.Add(this.findDividers);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "dividers";
             this.Text = "Нахождение всех делителей числа";
             this.ResumeLayout(false);

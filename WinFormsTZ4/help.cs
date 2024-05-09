@@ -15,34 +15,43 @@ namespace WinFormsTZ4
         string task;
         public help(string task)
         {
-            InitializeComponent();
             this.task = task;
-            string enterTheNumber = "Введите число в поле рядом с надписью \"Введите число\".";
+            string enterTheNumber = "Введите число в поле рядом с надписью \n\"Введите число\".";
+            string textt = string.Empty;
+            InitializeComponent();
             switch (task)
             {
                 case "dividers":
-                    helpMessage.Text = "Данный метод позволяет найти все делители заданного числа, учитывая единицу и само число.\n";
+                    textt += "Данный метод позволяет найти все делители\nзаданного числа, учитывая единицу и само число.\n" + enterTheNumber;
                     break;
                 case "factorization":
-                    helpMessage.Text = "";
+                    textt += "Данный метод позволяет разложить число\nна произведение простых чисел.\n" + enterTheNumber;
                     break;
                 case "primes":
-                    helpMessage.Text = "";
+                    textt += "Данный метод осуществляет поиск простых\nчисел в диапазоне от единицы до заданного\nчисла. Введите верхнюю границу интервала в\nсоответствующее поле.\n";
                     break;
                 case "gcd":
-                    helpMessage.Text = "";
+                    textt += "Данный метод осуществляет поиск наибольшего\nобщего делителя для двух чисел. Введите\nчисла в соответствующие поля.\n";
                     break;
                 case "lcm":
-                    helpMessage.Text = "";
+                    textt += "Данный метод осуществляет поиск наименьшего\nобщего кратного для двух чисел. Введите\nчисла в соответствующие поля.\n";
                     break;
                 case "bigIntFactorization":
-                    helpMessage.Text = "";
+                    textt += "Данный метод позволяет разложить число\nна произведение простых чисел.\n" + enterTheNumber;
                     break;
                 case "dividersProblem":
-                    helpMessage.Text = "";
+                    textt += "Данный метод решает следующую задачу:\nНайти числа с заданным количеством делителей\nв заданном интервале, вывести их\nи их делители.\n";
                     break;
-
+                default:
+                    break;
             }
+            textt += "После нажатия на кнопку\nвы получите результат в соответствующем окне.";
+            helpMessage.Text = textt;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

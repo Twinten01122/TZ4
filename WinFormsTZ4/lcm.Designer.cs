@@ -70,6 +70,7 @@
             this.help.TabIndex = 36;
             this.help.Text = "Справка";
             this.help.UseVisualStyleBackColor = true;
+            this.help.Click += new System.EventHandler(this.help_Click_1);
             // 
             // label3
             // 
@@ -142,6 +143,7 @@
             this.button1.TabIndex = 47;
             this.button1.Text = "Закрыть";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lcm
             // 

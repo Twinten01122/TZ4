@@ -42,12 +42,13 @@
             // 
             this.help.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
             this.help.Location = new System.Drawing.Point(799, 655);
-            this.help.Margin = new System.Windows.Forms.Padding(2);
+            this.help.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.help.Name = "help";
             this.help.Size = new System.Drawing.Size(212, 67);
             this.help.TabIndex = 20;
             this.help.Text = "Справка";
             this.help.UseVisualStyleBackColor = true;
+            this.help.Click += new System.EventHandler(this.help_Click_1);
             // 
             // label3
             // 
@@ -75,9 +76,8 @@
             // 
             this.factorizationResult.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
             this.factorizationResult.Location = new System.Drawing.Point(278, 575);
-            this.factorizationResult.Margin = new System.Windows.Forms.Padding(2);
+            this.factorizationResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.factorizationResult.Name = "factorizationResult";
-            this.factorizationResult.ReadOnly = true;
             this.factorizationResult.Size = new System.Drawing.Size(467, 53);
             this.factorizationResult.TabIndex = 17;
             // 
@@ -85,7 +85,7 @@
             // 
             this.initialNumber.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
             this.initialNumber.Location = new System.Drawing.Point(533, 202);
-            this.initialNumber.Margin = new System.Windows.Forms.Padding(2);
+            this.initialNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.initialNumber.Name = "initialNumber";
             this.initialNumber.Size = new System.Drawing.Size(354, 53);
             this.initialNumber.TabIndex = 16;
@@ -94,7 +94,7 @@
             // 
             this.findDividers.Font = new System.Drawing.Font("Verdana", 28.2F, System.Drawing.FontStyle.Italic);
             this.findDividers.Location = new System.Drawing.Point(223, 368);
-            this.findDividers.Margin = new System.Windows.Forms.Padding(2);
+            this.findDividers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.findDividers.Name = "findDividers";
             this.findDividers.Size = new System.Drawing.Size(576, 68);
             this.findDividers.TabIndex = 15;
@@ -121,6 +121,7 @@
             this.button1.TabIndex = 47;
             this.button1.Text = "Закрыть";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // bigIntFactorization
             // 
@@ -135,7 +136,7 @@
             this.Controls.Add(this.initialNumber);
             this.Controls.Add(this.findDividers);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "bigIntFactorization";
             this.Text = "Факторизация большого числа";
             this.ResumeLayout(false);
