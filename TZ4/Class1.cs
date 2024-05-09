@@ -14,7 +14,7 @@ namespace TZ4
         /// <summary>
         /// Функция находит все делители числа n
         /// </summary>
-        /// <param name="n">Число, делители которого нужно найти</param>
+        /// <param name="n">Число, делители которого нужно найти.</param>
         /// <returns>Возвращает строку со всеми делителями числа n</returns>
         public static string DivOfNUm(int n)
         {         
