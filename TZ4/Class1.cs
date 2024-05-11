@@ -58,15 +58,14 @@ namespace TZ4
             StringBuilder sb = new StringBuilder();
             List<int> final = new List<int>();
             
-            int[] prn = PrimeNum(n);
-            while (n != 1)
-                foreach (int i in prn)
-                    if (n % i == 0)
-                    {
-                        final.Add(i);
-                        n /= i;
-                        break;
-                    }
+            
+            for (int i = 2; i <=n; i++)
+                while (n % i == 0 && n != 1)
+                {
+                    final.Add(i);
+                    n /= i;
+                }         
+                    
             int c = 1;
             int j = 1;
             for (; j < final.Count; j++)
@@ -87,12 +86,12 @@ namespace TZ4
         /// </summary>
         /// <param name="n">Число</param>
         /// <returns>Возвращает массив, который содержыт все простые числа в диапазоне [1,n]</returns>
-        public static int[] PrimeNum(int n)
+        public static string PrimeNum(int n)
         {
             int i = 0;
-            List<int> list = new List<int>();
-            bool[] key = new bool[n];            
-            
+            StringBuilder sb = new StringBuilder();
+            bool[] key = new bool[n]; 
+         
             for (i = 2; i <= n; i++)
                 key[i - 2] = true;           
             
@@ -102,27 +101,15 @@ namespace TZ4
                         key[j - 2] = false;
             for (i = 2; i <= key.Length; i++)            
                 if (key[i - 2])
-                    list.Add(i);            
-            return list.ToArray();            
+                    sb.Append(i).Append(" ");            
+            return sb.ToString();            
         }
-
-
-
-        //Внутренняя функция
-        private static int[] FacInside(int n)
-        {
-            List<int> final = new List<int>();
-            int[] prn = PrimeNum(n);
-            while (n != 1)
-                foreach (int i in prn)
-                    if (n % i == 0)
-                    {
-                        final.Add(i);
-                        n /= i;
-                        break;
-                    }           
-            return final.ToArray();
-        }
+        /// <summary>
+        /// Нахождение наибольшего общего делителя
+        /// </summary>
+        /// <param name="n">Первое число</param>
+        /// <param name="m">Второе число</param>
+        /// <returns>Число, являющееся НОД для двух чисел</returns>
         static public long FindNOD(int n, int m)
         {            
             while(m != 0)
