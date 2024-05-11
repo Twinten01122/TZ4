@@ -28,12 +28,7 @@ namespace WinFormsTZ4
                 if (n <=1)
                     throw new Exception("Вы ввели число меньше единицы.");
 
-                string ans = "";
-
-                foreach (int i in Numbers.PrimeNum(n))
-                    ans += i.ToString() + " ";
-
-                primesResult.Text = ans;
+                primesResult.Text = Numbers.PrimeNum(n);
             }
             catch (Exception ex)
             {
