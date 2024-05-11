@@ -55,8 +55,9 @@ namespace TZ4
         /// <returns>Возвращает строку, которая является простыми делителями числа n</returns>
         public static string Factorization(int n)
         {
+            StringBuilder sb = new StringBuilder();
             List<int> final = new List<int>();
-            string s = "";
+            
             int[] prn = PrimeNum(n);
             while (n != 1)
                 foreach (int i in prn)
@@ -74,33 +75,33 @@ namespace TZ4
                     c++;
                 else
                 { 
-                    s = s + final[j - 1].ToString() + "^" + c + "*";
+                    sb.Append(final[j - 1]).Append("^").Append(c).Append("*");
                     c = 1;
                 }  
             }
-            s = s + final[j - 1].ToString() + "^" + c;            
-            return s;
+            sb.Append(final[j - 1]).Append("^").Append(c);            
+            return sb.ToString();
         }
         /// <summary>
         /// Нахождение всех простых чисел в диапазоне [1,n]
         /// </summary>
-        /// <param name="n">Число, </param>
+        /// <param name="n">Число</param>
         /// <returns>Возвращает массив, который содержыт все простые числа в диапазоне [1,n]</returns>
         public static int[] PrimeNum(int n)
         {
             int i = 0;
             List<int> list = new List<int>();
-            Dictionary<int, bool> dic = new Dictionary<int, bool>();
+            bool[] key = new bool[n];            
             
             for (i = 2; i <= n; i++)
-                dic[i] = true;           
+                key[i - 2] = true;           
             
             for (i = 2; i * i <= n; i++)
-                if (dic[i])
+                if (key[i - 2])
                     for (int j = i * i; j <= n; j += i)
-                        dic[j] = false;
-            for (i = 2; i <= dic.Count + 1; i++)            
-                if (dic[i])
+                        key[j - 2] = false;
+            for (i = 2; i <= key.Length; i++)            
+                if (key[i - 2])
                     list.Add(i);            
             return list.ToArray();            
         }

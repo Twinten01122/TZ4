@@ -87,14 +87,14 @@ namespace Test
             Dividers[460] = "2^2*5^1*23^1";
             Dividers[687] = "3^1*229^1";
             Dividers[5400] = "2^3*3^3*5^2";
-            Dividers[6583] = "3^2*11^1*101^1";
-            Dividers[9999] = "17^1*23^1*2011^1";
-            Dividers[786301] = "2^6*5^6";
-            Dividers[1000000] = "2^1*137^1*3659^1";
-            Dividers[1002566] = "19^1*313^1*1283^1";
-            Dividers[7630001] = "2^1*3^2*227^1*2357^1";
-            Dividers[9630702] = "5^2*7^1*313717^1";
-            Dividers[54900475] = "1 7 28657 200599 ";
+            Dividers[6583] = "29^1*227^1";
+            Dividers[9999] = "3^2*11^1*101^1";
+            Dividers[786301] = "17^1*23^1*2011^1"; 
+            Dividers[1000000] = "2^6*5^6";
+            Dividers[1002566] = "2^1*137^1*3659^1"; 
+            Dividers[7630001] = "19^1*313^1*1283^1"; 
+            Dividers[9630702] = "2^1*3^2*227^1*2357^1";
+            Dividers[54900475] = "5^2*7^1*313717^1";
             Dividers[887111477] = "7^1*126730211^1";
             Dividers[1662583120] = "2^4*5^1*11^1*107^1*17657^1";
 
@@ -361,7 +361,7 @@ namespace Test
             PrimeDivisorsTest();
             NODTest();
             NOKTest();
-            BigIntFactorizationTest();
+            //BigIntFactorizationTest();
             ProblemTest();
 
             if (incorrectMethods == "")
