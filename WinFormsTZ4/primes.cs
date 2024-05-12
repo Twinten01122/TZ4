@@ -33,6 +33,7 @@ namespace WinFormsTZ4
             catch (Exception ex)
             {
                 Form form = new error(ex.Message);
+                form.AutoSize = true;
                 form.ShowDialog();
             }
             
@@ -41,6 +42,7 @@ namespace WinFormsTZ4
         private void help_Click(object sender, EventArgs e)
         {
             help form = new help("primes");
+            form.AutoSize = true;
             form.ShowDialog();
         }
 

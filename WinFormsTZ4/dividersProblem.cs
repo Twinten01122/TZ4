@@ -27,13 +27,14 @@ namespace WinFormsTZ4
                     throw new Exception("Вы ввели не число или не целое число.");
 
                 if (n <= 0 || m <= 0 || k <= m)
-                    throw new Exception("Вы ввели неположительное число или верхняя граница интервала не превышает нижнюю.");
+                    throw new Exception("Вы ввели неположительное число или\n верхняя граница интервала не превышает нижнюю.");
                 
                 (numbersResult.Text, dividersResult.Text) = Numbers.Task(m, k, n);
             }
             catch (Exception ex)
             {
                 Form form = new error(ex.Message);
+                form.AutoSize = true;
                 form.ShowDialog();
             }
         }      
@@ -42,6 +43,7 @@ namespace WinFormsTZ4
         private void help_Click_1(object sender, EventArgs e)
         {
             help form = new help("dividersProblem");
+            form.AutoSize = true;
             form.ShowDialog();
         }
 
