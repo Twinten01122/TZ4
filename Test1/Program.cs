@@ -353,14 +353,14 @@ namespace Test
         {
             incorrectMethods = "";
 
-            Console.WriteLine("\nТестирование всех методов библиотеки NumberLib");
+            Console.WriteLine("\nТестирование всех методов библиотеки Numbers");
 
             DividersTest();
             FactorizationTest();
             PrimeDivisorsTest();
             NODTest();
             NOKTest();
-            //BigIntFactorizationTest();
+            BigIntFactorizationTest();
             ProblemTest();
 
             if (incorrectMethods == "")
